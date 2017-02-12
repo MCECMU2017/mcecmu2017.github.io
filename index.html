@@ -1,8 +1,20 @@
 <html>
  <h1> Hello World</h1>
+ 
+ <a id="play-video" href="#">Play Video</a><br />
+ 
+ $(document).ready(function() {
+  $('#play-video').on('click', function(ev) {
+ 
+    $("#video")[0].src += "&autoplay=1";
+    ev.preventDefault();
+ 
+  });
+});
+ 
 <iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 
- <a id="play-video" href="#">Play Video</a><br />
+ 
  
  <!-- Start Visual Website Optimizer Asynchronous Code -->
 <script type='text/javascript'>
