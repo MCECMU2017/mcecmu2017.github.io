@@ -3,7 +3,16 @@
  
  <a id="play-video" href="#">Play Video</a><br />
  
- $(document).ready(function() {
+
+ 
+<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+
+ 
+ 
+ <!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+ 
+  $(document).ready(function() {
   $('#play-video').on('click', function(ev) {
  
     $("#video")[0].src += "&autoplay=1";
@@ -12,12 +21,7 @@
   });
 });
  
-<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
-
  
- 
- <!-- Start Visual Website Optimizer Asynchronous Code -->
-<script type='text/javascript'>
 var _vwo_code=(function(){
 var account_id=283016,
 settings_tolerance=2000,
