@@ -8,20 +8,20 @@
  
 <!--<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 -->
- <p >OK2</p>
+ <p >OK</p>
  <p id="demo"></p>
  
  
  <!-- Start Visual Website Optimizer Asynchronous Code -->
 <script type='text/javascript'>
- 
- var y= Math.Random();
- var text;
+ var y=0.6
+ y= Math.Random();
+ var text="ok";
  if (y>0.5)
   text="hello1" +$y;
  else
   text="hello3 " +$y;
- document.getElementById("demo").innerHTML = text;
+ $("demo").html(text) ;
  
 //   $(document).ready(function() {
 //   $('#play-video').on('click', function(ev) {
