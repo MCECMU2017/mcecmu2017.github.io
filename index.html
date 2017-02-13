@@ -1,47 +1,43 @@
 <html>
 <body>
- <h1> Hello World</h1>
- 
- <a id="play-video" href="#">Play Video1</a><br />
- 
+ <h1> MCE PROJECT</h1>
+ <h2> Please selecct a category of video and click submit</h2>
+ <form onsubmit="get_action(this)" id="form_id">
+  <input id="myRadio1" type="radio" name="cat" value="one" checked> One<br>
+  <input id="myRadio2" type="radio" name="cat" value="two"> Two<br>
+ <input id= "Submit" type="submit" value="Submit">	
+</form>
 
  
-<!--<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
--->
- <p >OK1</p>
+//<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=0&showinfo=1&controls=0" frameborder="0" allowfullscreen></iframe>
 
+ <p >OK</p>
+ <p id="demo">Good Evening!</p>
+ <p id="demo2">Good !</p>
  
  
- <!-- Start Visual Website Optimizer Asynchronous Code -->
-<script type='text/javascript'>
- var y=0.6
- y= Math.Random();
- var text="ok";
- if (y>0.5)
-  text="hello1";
+
+<script >
+function get_action(form) {
+var y=Math.random();
+
+if(document.getElementById("myRadio1").checked){
+if (y>0.5) {
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/SVSC9CN";
+  }
+else{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/SVTLJH5";
+  }
+  }
  else
-  text="hello3 ";
- document.write('xxx')
- //document.getElementById("demo").innerHTML = text;
+ {
+  alert("NO video yet");}
+
+  
+  }
+	
  
-//   $(document).ready(function() {
-//   $('#play-video').on('click', function(ev) {
- 
-//     $("#video")[0].src += "&autoplay=1";
-//     ev.preventDefault();
- 
-//   });
-// });
- 
- 
-// var _vwo_code=(function(){
-// var account_id=283016,
-// settings_tolerance=2000,
-// library_tolerance=2500,
-// use_existing_jquery=false,
-// /* DO NOT EDIT BELOW THIS LINE */
-// f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
 </script>
-<!-- End Visual Website Optimizer Asynchronous Code -->
+
  </body>
 </html>
