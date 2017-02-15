@@ -11,25 +11,7 @@
 
 <script >
 function get_action(form) {
-var y=Math.random();
-
-if(document.getElementById("myRadio1").checked){
-if (y>0.5) {
-  document.getElementById('form_id').action="<html>
-<body>
- <h1> MCE PROJECT</h1>
- <h2> Please selecct a category of video and click submit</h2>
- <form onsubmit="get_action(this)" id="form_id">
-  <input id="myRadio1" type="radio" name="cat" value="one" checked> One<br>
-  <input id="myRadio2" type="radio" name="cat" value="two"> Two<br>
- <input id= "Submit" type="submit" value="Submit">	
-</form>
-
-<script >
-function get_action(form) 
-{
-var y=Math.random();
-	 
+var y=Math.random();	 
 if(document.getElementById("myRadio1").checked)
 {
 if (y>0.5) 
