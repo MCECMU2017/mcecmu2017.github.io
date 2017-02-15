@@ -8,9 +8,6 @@
  <input id= "Submit" type="submit" value="Submit">	
 </form>
 
-<!--<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/qHn0SJHL6Sk?rel=0&modestbranding=1&autohide=0&showinfo=1&controls=0" frameborder="0" allowfullscreen></iframe>
--->
-
 
 <script >
 function get_action(form) {
@@ -18,21 +15,47 @@ var y=Math.random();
 
 if(document.getElementById("myRadio1").checked){
 if (y>0.5) {
-  document.getElementById('form_id').action="https://www.surveymonkey.com/r/SVSC9CN";
-  }
-else{
-  document.getElementById('form_id').action="https://www.surveymonkey.com/r/SVTLJH5";
-  }
-  }
+  document.getElementById('form_id').action="<html>
+<body>
+ <h1> MCE PROJECT</h1>
+ <h2> Please selecct a category of video and click submit</h2>
+ <form onsubmit="get_action(this)" id="form_id">
+  <input id="myRadio1" type="radio" name="cat" value="one" checked> One<br>
+  <input id="myRadio2" type="radio" name="cat" value="two"> Two<br>
+ <input id= "Submit" type="submit" value="Submit">	
+</form>
+
+<script >
+function get_action(form) 
+{
+var y=Math.random();
+	 
+if(document.getElementById("myRadio1").checked)
+{
+if (y>0.5) 
+	{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/5RX6Z78";
+  	}
+else
+	{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/5R3CKTZ";
+  	}
+}
  else
  {
-  alert("NO video yet");
-	 document.getElementById('form_id').action="https://mcecmu2017.github.io/";
+  if (y>0.5) 
+	{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/5RGGYXS";
+  	}
+else
+	{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/5RHRSVB";
+  	}
  }
  }
 	
  
 </script>
 
- </body>
+</body>
 </html>
