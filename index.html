@@ -7,6 +7,7 @@
  <form onsubmit="get_action(this)" id="form_id">
 	 <input id="myRadio1" type="radio" name="mce" value="sports" checked><b> SPORTS</b><br>
 	 <input id="myRadio2" type="radio" name="mce" value="education"> <b>EDUCATION</b><br>
+	  <input id="myRadio3" type="radio" name="mce" value="movie"> <b>MOVIE TRAILER</b><br>
  <input id= "Submit" type="submit" value="Submit">
 	 
 <p>*This survey has been created by a group of students  at Carnegie Mellon University for a Project in Measuring Causal Effects and is not meant to be used for any other purpose :)</p><br>
@@ -27,7 +28,7 @@ else
   document.getElementById('form_id').action="https://www.surveymonkey.com/r/5R3CKTZ";
   	}
 }
- else
+ else if(document.getElementById("myRadio2").checked)
  {
   if (y>0.5) 
 	{
@@ -38,6 +39,18 @@ else
   document.getElementById('form_id').action="https://www.surveymonkey.com/r/5RHRSVB";
   	}
  }
+else 
+ {
+  if (y>0.5) 
+	{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/SVSC9CN";
+  	}
+else
+	{
+  document.getElementById('form_id').action="https://www.surveymonkey.com/r/SVTLJH5";
+  	}
+ }
+
  }
 	
  
